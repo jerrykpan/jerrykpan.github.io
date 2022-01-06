@@ -80,6 +80,17 @@ a {
 
 /* Project section */
 
+.projects-grid {
+  font-family: 'Nunito';
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
 .projects-section {
   padding: 90px 15px;
   text-align: center;
@@ -92,6 +103,23 @@ a {
   font-size: 40px;
   border-bottom: 2px solid white;
 }
+
+.code {
+  color: var(--main-red);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: white;
+}
+
+.project-image {
+  height: calc(100% - 20rem);
+  width: 20%;
+  object-fit: cover;
+}
+
+
 
 /* Contact section */
 
